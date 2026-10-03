@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /partner-events
+Disallow: /partner-events.html
+
+Sitemap: https://blacksummitenterprisegroup.com/sitemap.xml
