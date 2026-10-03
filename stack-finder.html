@@ -1,0 +1,266 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="theme-color" content="#080f1a"><style>@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+:root{--bg:#080f1a;--panel:#0d1b2e;--panel2:#12223a;--navy:#0d1b2e;--navy2:#1f3864;--gold:#c9a84c;--gold2:#e8c97a;--text:#fafaf8;--muted:#9cabbc;--line:rgba(201,168,76,.2);--success:#7fc89b;--warn:#e3b66c;--danger:#df8b8b;--radius:18px;--shadow:0 24px 60px rgba(0,0,0,.28)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'DM Sans',sans-serif;background:radial-gradient(900px 540px at 82% 12%,rgba(31,56,100,.28),transparent 60%),linear-gradient(180deg,#080f1a,#0a1321 50%,#080f1a);color:var(--text);min-height:100vh}a{color:inherit}.shell{width:min(1180px,calc(100% - 40px));margin:0 auto}.site-nav{position:sticky;top:0;z-index:50;background:rgba(8,15,26,.92);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav-inner{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:14px;text-decoration:none;font-family:'Cormorant Garamond',serif;font-weight:700;letter-spacing:.02em}.brand img{width:52px;height:35px;object-fit:contain}.brand span{font-size:1.12rem}.nav-links{display:flex;align-items:center;gap:26px}.nav-links a{text-decoration:none;color:var(--muted);font-size:.88rem;font-weight:600}.nav-links a:hover,.nav-links a[aria-current="page"]{color:var(--gold2)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:8px;padding:13px 20px;border:1px solid transparent;text-decoration:none;font-weight:700;cursor:pointer;font:inherit}.nav-cta,.btn-primary{background:var(--gold);color:#101723}.nav-cta:hover,.btn-primary:hover{background:var(--gold2)}.btn-secondary{border-color:var(--line);background:rgba(255,255,255,.025);color:var(--text)}.btn-secondary:hover{border-color:rgba(201,168,76,.5);background:rgba(201,168,76,.06)}.hero{padding:105px 0 82px;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(201,168,76,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,.03) 1px,transparent 1px);background-size:54px 54px;mask-image:linear-gradient(to bottom,black,transparent)}.hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}.eyebrow{display:flex;align-items:center;gap:10px;color:var(--gold2);font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;margin-bottom:20px}.eyebrow:before{content:"";width:30px;height:1px;background:var(--gold)}h1,h2,h3{font-family:'Cormorant Garamond',serif;margin:0}h1{font-size:clamp(3.1rem,6vw,5.8rem);line-height:.95;letter-spacing:-.035em}h1 em{color:var(--gold2);font-style:normal}.lead{font-size:1.08rem;line-height:1.8;color:#bdc7d3;max-width:690px;margin:26px 0 30px}.actions{display:flex;gap:12px;flex-wrap:wrap}.hero-card{position:relative;padding:28px;border:1px solid var(--line);background:linear-gradient(150deg,rgba(18,34,58,.95),rgba(13,27,46,.72));border-radius:24px;box-shadow:var(--shadow)}.hero-card:after{content:"";position:absolute;inset:10px;border:1px solid rgba(255,255,255,.035);border-radius:17px;pointer-events:none}.signal{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:17px 0;border-bottom:1px solid rgba(255,255,255,.08)}.signal:last-child{border-bottom:0}.signal-icon{width:44px;height:44px;display:grid;place-items:center;border-radius:12px;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.2);color:var(--gold2);font-weight:800}.signal strong{display:block;margin-bottom:4px}.signal span{font-size:.88rem;color:var(--muted);line-height:1.45}.section{padding:78px 0}.section-head{max-width:760px;margin-bottom:36px}.section-head h2{font-size:clamp(2.35rem,4vw,3.5rem);line-height:1.05}.section-head p{color:var(--muted);line-height:1.75;margin:14px 0 0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:26px;border:1px solid rgba(255,255,255,.09);background:linear-gradient(145deg,rgba(18,34,58,.68),rgba(13,27,46,.42));border-radius:var(--radius);min-height:220px}.card .kicker{font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;color:var(--gold2);font-weight:700}.card h3{font-size:1.65rem;margin:10px 0 9px}.card p{color:var(--muted);line-height:1.65;margin:0}.card .link{display:inline-block;margin-top:20px;color:var(--gold2);text-decoration:none;font-weight:700}.card .status{display:inline-flex;margin-top:18px;font-size:.73rem;font-weight:700;padding:6px 9px;border-radius:999px;border:1px solid rgba(255,255,255,.1);color:#c8d0d9;background:rgba(255,255,255,.04)}.band{border-block:1px solid var(--line);background:rgba(201,168,76,.04)}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{padding:22px}.step-num{font-family:'Cormorant Garamond',serif;font-size:2.4rem;color:var(--gold2)}.step h3{font-size:1.3rem;margin:3px 0 8px}.step p{color:var(--muted);line-height:1.6;font-size:.92rem}.disclosure{padding:20px 22px;border:1px solid rgba(255,255,255,.08);border-radius:14px;color:var(--muted);line-height:1.65;font-size:.88rem;background:rgba(255,255,255,.02)}footer{border-top:1px solid var(--line);padding:42px 0;color:var(--muted);font-size:.87rem}.footer-row{display:flex;justify-content:space-between;gap:24px;align-items:flex-start}.footer-links{display:flex;gap:18px;flex-wrap:wrap}.footer-links a{text-decoration:none}.footer-links a:hover{color:var(--gold2)}
+/* Finder */.finder-wrap{padding:58px 0 84px}.finder-header{display:flex;justify-content:space-between;gap:26px;align-items:end;margin-bottom:26px}.finder-header h1{font-size:clamp(2.6rem,5vw,4.4rem)}.finder-header p{max-width:660px;color:var(--muted);line-height:1.7}.progress-shell{height:7px;background:rgba(255,255,255,.08);border-radius:999px;overflow:hidden;margin:22px 0 34px}.progress-bar{height:100%;width:25%;background:linear-gradient(90deg,var(--gold),var(--gold2));transition:width .25s ease}.finder-card{border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,rgba(18,34,58,.9),rgba(13,27,46,.82));box-shadow:var(--shadow);padding:32px}.form-step{display:none}.form-step.active{display:block}.step-title{font-family:'Cormorant Garamond',serif;font-size:2rem;margin-bottom:8px}.step-copy{color:var(--muted);line-height:1.6;margin:0 0 25px}.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field{display:flex;flex-direction:column;gap:8px}.field.full{grid-column:1/-1}.field label{font-size:.88rem;font-weight:700;color:#dfe5ec}.field .hint{font-size:.77rem;color:#7f8ea1;font-weight:400}.field input,.field select,.field textarea{width:100%;border:1px solid rgba(255,255,255,.13);background:#091423;color:var(--text);border-radius:10px;padding:14px 14px;font:inherit;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,168,76,.1)}.field textarea{min-height:105px;resize:vertical}.choice-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.choice{display:block;position:relative}.choice input{position:absolute;opacity:0}.choice span{display:block;border:1px solid rgba(255,255,255,.12);background:#091423;border-radius:12px;padding:15px;color:#d9e0e7;line-height:1.35;cursor:pointer;min-height:54px}.choice input:checked+span{border-color:var(--gold);background:rgba(201,168,76,.08);box-shadow:0 0 0 2px rgba(201,168,76,.07)}.question{margin-bottom:24px}.question>label{display:block;font-weight:700;margin-bottom:11px;line-height:1.45}.question small{display:block;color:var(--muted);margin-top:5px}.form-actions{display:flex;justify-content:space-between;gap:12px;margin-top:28px}.error-box{display:none;background:rgba(223,139,139,.1);border:1px solid rgba(223,139,139,.35);color:#f0b1b1;padding:12px 14px;border-radius:10px;margin:15px 0}.error-box.show{display:block}.consent{display:flex;gap:11px;align-items:flex-start;margin:14px 0;color:#c7d0da;line-height:1.5;font-size:.88rem}.consent input{margin-top:3px;accent-color:var(--gold)}.results{display:none}.results.show{display:block}.result-hero{padding:28px;border-radius:18px;border:1px solid var(--line);background:rgba(201,168,76,.055);margin-bottom:22px}.result-hero h2{font-size:2.4rem}.result-hero p{color:var(--muted);line-height:1.65}.result-group{margin:26px 0}.result-group h3{font-size:1.65rem;margin-bottom:12px}.result-list{display:grid;gap:13px}.result-item{padding:20px;border-radius:14px;background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.09)}.result-item .result-row{display:flex;justify-content:space-between;gap:16px;align-items:start}.result-item h4{margin:0 0 7px;font-size:1.02rem}.result-item p{margin:0;color:var(--muted);line-height:1.55;font-size:.9rem}.result-item .next{margin-top:10px;color:#dce3ea}.pill{font-size:.72rem;font-weight:800;letter-spacing:.04em;padding:6px 8px;border-radius:999px;white-space:nowrap}.pill.internal{background:rgba(127,200,155,.12);color:#9dd8b3;border:1px solid rgba(127,200,155,.25)}.pill.guidance{background:rgba(227,182,108,.1);color:#ecc987;border:1px solid rgba(227,182,108,.22)}.result-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.privacy-note{margin-top:18px;color:#7f8ea1;font-size:.78rem;line-height:1.5}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.nav-links a:not(.nav-cta){display:none}}@media(max-width:650px){.shell{width:min(100% - 28px,1180px)}.site-nav .brand span{font-size:.96rem}.brand img{width:44px}.nav-cta{padding:11px 13px;font-size:.82rem}.hero{padding:72px 0 56px}.hero-grid{gap:32px}.cards,.steps,.field-grid,.choice-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.finder-card{padding:22px 17px}.finder-header{display:block}.form-actions{flex-direction:column-reverse}.form-actions .btn{width:100%}.footer-row{flex-direction:column}.result-item .result-row{display:block}.pill{display:inline-flex;margin-top:10px}}
+</style><title>Business Stack Finder | Black Summit Enterprise Group</title><meta name="description" content="Identify top business system priorities across funding, payments, payroll, CRM, intake, invoicing, and operations."></head><body><header class="site-nav"><div class="shell nav-inner"><a class="brand" href="/"><span>Black Summit Enterprise Group</span></a><nav class="nav-links" aria-label="Primary"><a href="/">Funding</a><a href="/business-solutions/" >Business Solutions</a><a class="nav-cta" href="/business-solutions/stack-finder/" aria-current="page" data-track="nav_stack_finder">Stack Finder</a></nav></div></header>
+<main class="finder-wrap"><div class="shell"><div class="finder-header"><div><div class="eyebrow">Free business needs assessment</div><h1>Business Stack Finder</h1></div><p>Answer a few practical questions. We’ll sort your needs into top priorities, secondary opportunities, and areas that do not need action right now.</p></div><div class="progress-shell" aria-label="Progress"><div class="progress-bar"></div></div>
+<form id="stackFinderForm" name="business-stack-finder" method="POST" data-netlify="true" netlify-honeypot="bot-field"><input type="hidden" name="form-name" value="business-stack-finder"><p hidden><label>Don’t fill this out: <input name="bot-field"></label></p><input type="hidden" name="business_id"><input type="hidden" name="recommendations_json"><input type="hidden" name="attribution_json"><input type="hidden" name="consent_version" value="task2-v1">
+<div class="finder-card"><div class="error-box" role="alert"></div>
+<section class="form-step active" data-step="1"><h2 class="step-title">Business profile</h2><p class="step-copy">Basic information gives context to the recommendations. We do not ask for SSNs, EINs, bank credentials, card data, or underwriting documents.</p><div class="field-grid"><div class="field"><label for="business_name">Business name</label><input id="business_name" name="business_name" required autocomplete="organization"></div><div class="field"><label for="contact_name">Your name</label><input id="contact_name" name="contact_name" required autocomplete="name"></div><div class="field"><label for="email">Email</label><input id="email" type="email" name="email" required autocomplete="email"></div><div class="field"><label for="phone">Phone <span class="hint">optional</span></label><input id="phone" type="tel" name="phone" autocomplete="tel"></div><div class="field"><label for="website">Website <span class="hint">optional</span></label><input id="website" name="website" inputmode="url" placeholder="https://"></div><div class="field"><label for="industry">Industry</label><input id="industry" name="industry" required placeholder="e.g. HVAC, trucking, restaurant"></div><div class="field"><label for="years_operating">Years operating</label><select id="years_operating" name="years_operating" required><option value="">Select</option><option>Pre-launch</option><option>Less than 1 year</option><option>1–2 years</option><option>3–5 years</option><option>6–10 years</option><option>10+ years</option></select></div><div class="field"><label for="revenue_range">Approx. annual revenue <span class="hint">optional</span></label><select id="revenue_range" name="revenue_range"><option value="">Prefer not to say</option><option>Pre-revenue</option><option>Under $100K</option><option>$100K–$249K</option><option>$250K–$499K</option><option>$500K–$999K</option><option>$1M–$4.9M</option><option>$5M+</option></select></div></div><div class="form-actions"><span></span><button type="button" class="btn btn-primary" data-next>Continue</button></div></section>
+<section class="form-step" data-step="2"><h2 class="step-title">Team and money movement</h2><p class="step-copy">These questions identify where payroll, payments, or financing may deserve attention.</p>
+<div class="question"><label>1. How many employees does the business have?</label><div class="choice-grid"><label class="choice"><input type="radio" name="employee_count" value="None" required><span>None</span></label><label class="choice"><input type="radio" name="employee_count" value="Only owners"><span>Only owners</span></label><label class="choice"><input type="radio" name="employee_count" value="1–5"><span>1–5</span></label><label class="choice"><input type="radio" name="employee_count" value="6–20"><span>6–20</span></label><label class="choice"><input type="radio" name="employee_count" value="21+"><span>21+</span></label></div></div>
+<div class="question"><label>2. How do customers usually pay you?</label><div class="choice-grid"><label class="choice"><input type="radio" name="customer_payments" value="Mostly card payments" required><span>Mostly card payments</span></label><label class="choice"><input type="radio" name="customer_payments" value="Invoices / ACH / checks"><span>Invoices / ACH / checks</span></label><label class="choice"><input type="radio" name="customer_payments" value="Online payment links or ecommerce"><span>Online payment links / ecommerce</span></label><label class="choice"><input type="radio" name="customer_payments" value="Cash or mixed methods"><span>Cash or mixed methods</span></label></div></div>
+<div class="question"><label>3. Which best describes payroll today?</label><div class="choice-grid"><label class="choice"><input type="radio" name="payroll_workflow" value="No payroll needed" required><span>No payroll needed</span></label><label class="choice"><input type="radio" name="payroll_workflow" value="Existing payroll system works well"><span>Existing system works well</span></label><label class="choice"><input type="radio" name="payroll_workflow" value="Manual or spreadsheet payroll"><span>Manual / spreadsheet process</span></label><label class="choice"><input type="radio" name="payroll_workflow" value="Problems or considering a switch"><span>Problems / considering a switch</span></label></div></div>
+<div class="question"><label>4. Do you expect a funding need?</label><div class="choice-grid"><label class="choice"><input type="radio" name="funding_need" value="No current funding need" required><span>No current funding need</span></label><label class="choice"><input type="radio" name="funding_need" value="Working capital"><span>Working capital</span></label><label class="choice"><input type="radio" name="funding_need" value="Equipment or transportation financing"><span>Equipment / transportation financing</span></label><label class="choice"><input type="radio" name="funding_need" value="Expansion or other business financing"><span>Expansion / other financing</span></label></div></div>
+<div class="form-actions"><button type="button" class="btn btn-secondary" data-back>Back</button><button type="button" class="btn btn-primary" data-next>Continue</button></div></section>
+<section class="form-step" data-step="3"><h2 class="step-title">Sales and customer workflow</h2><p class="step-copy">Now we look for avoidable manual work and dropped opportunities.</p>
+<div class="question"><label>5. How are new leads captured and followed up?</label><div class="choice-grid"><label class="choice"><input type="radio" name="lead_followup" value="CRM with consistent follow-up" required><span>CRM with consistent follow-up</span></label><label class="choice"><input type="radio" name="lead_followup" value="Spreadsheet or manual tracking"><span>Spreadsheet / manual tracking</span></label><label class="choice"><input type="radio" name="lead_followup" value="Inbox, text messages, or memory"><span>Inbox / texts / memory</span></label><label class="choice"><input type="radio" name="lead_followup" value="No system"><span>No real system</span></label></div></div>
+<div class="question"><label>6. How do customers give you the information needed for a quote or appointment?</label><div class="choice-grid"><label class="choice"><input type="radio" name="customer_intake" value="Standard online form" required><span>Standard online form</span></label><label class="choice"><input type="radio" name="customer_intake" value="Text, email, phone, or paper"><span>Text / email / phone / paper</span></label><label class="choice"><input type="radio" name="customer_intake" value="Inconsistent process"><span>Inconsistent process</span></label><label class="choice"><input type="radio" name="customer_intake" value="No standard intake"><span>No standard intake</span></label></div></div>
+<div class="question"><label>7. Which best describes accounting and invoicing?</label><div class="choice-grid"><label class="choice"><input type="radio" name="accounting_invoicing" value="Integrated system works well" required><span>Integrated system works well</span></label><label class="choice"><input type="radio" name="accounting_invoicing" value="Manual or spreadsheet workflow"><span>Manual / spreadsheet workflow</span></label><label class="choice"><input type="radio" name="accounting_invoicing" value="Disconnected tools or duplicate entry"><span>Disconnected tools / duplicate entry</span></label><label class="choice"><input type="radio" name="accounting_invoicing" value="Problems with invoicing or reconciliation"><span>Invoicing / reconciliation problems</span></label></div></div>
+<div class="question"><label>8. What is the single biggest operational problem right now?</label><div class="choice-grid"><label class="choice"><input type="radio" name="biggest_problem" value="Payment processing costs or cash flow" required><span>Payment processing costs / cash flow</span></label><label class="choice"><input type="radio" name="biggest_problem" value="Payroll or team administration"><span>Payroll / team administration</span></label><label class="choice"><input type="radio" name="biggest_problem" value="Lead follow-up or sales organization"><span>Lead follow-up / sales organization</span></label><label class="choice"><input type="radio" name="biggest_problem" value="Customer intake or quoting workflow"><span>Customer intake / quoting</span></label><label class="choice"><input type="radio" name="biggest_problem" value="Accounting, invoicing, or reconciliation"><span>Accounting / invoicing / reconciliation</span></label><label class="choice"><input type="radio" name="biggest_problem" value="Access to capital"><span>Access to capital</span></label><label class="choice"><input type="radio" name="biggest_problem" value="No major operational problem"><span>No major operational problem</span></label></div></div>
+<div class="form-actions"><button type="button" class="btn btn-secondary" data-back>Back</button><button type="button" class="btn btn-primary" data-next>Continue</button></div></section>
+<section class="form-step" data-step="4"><h2 class="step-title">Review and consent</h2><p class="step-copy">Your results are an operational prioritization, not underwriting or a guarantee of savings, approval, or provider fit.</p><div class="question"><label>9. What would a useful next step look like?</label><div class="choice-grid"><label class="choice"><input type="radio" name="preferred_next_step" value="Self-serve guidance" required><span>Self-serve guidance</span></label><label class="choice"><input type="radio" name="preferred_next_step" value="Black Summit review"><span>A Black Summit review</span></label><label class="choice"><input type="radio" name="preferred_next_step" value="Explore funding"><span>Explore funding if relevant</span></label></div></div><div class="question"><label>10. When are you looking to improve the business stack?</label><div class="choice-grid"><label class="choice"><input type="radio" name="timeline" value="Now" required><span>Now</span></label><label class="choice"><input type="radio" name="timeline" value="Within 30 days"><span>Within 30 days</span></label><label class="choice"><input type="radio" name="timeline" value="Within 90 days"><span>Within 90 days</span></label><label class="choice"><input type="radio" name="timeline" value="Just researching"><span>Just researching</span></label></div></div><label class="consent"><input type="checkbox" name="review_consent" value="yes" required><span>I consent to Black Summit reviewing the information I submitted to generate and follow up on this Business Stack Finder assessment.</span></label><label class="consent"><input type="checkbox" name="marketing_consent" value="yes"><span>Optional: I would like occasional Black Summit updates about business resources and services.</span></label><p class="privacy-note">No information is shared with a third-party provider from this Task 2 flow. Partner-sharing consent must be collected separately before any future referral.</p><div class="form-actions"><button type="button" class="btn btn-secondary" data-back>Back</button><button type="submit" class="btn btn-primary">Show My Priorities</button></div></section>
+</div></form>
+<section class="results" aria-live="polite"><div class="result-hero"><div class="eyebrow">Your prioritized business stack</div><h2>Next steps for <span id="resultsBusinessName">your business</span></h2><p>These results are based on the workflow needs you selected. No third-party vendor has been selected or activated.</p></div><div class="result-group"><h3>Top Priority</h3><div class="result-list" id="topResults"></div></div><div class="result-group"><h3>Secondary Opportunities</h3><div class="result-list" id="secondaryResults"></div></div><div class="result-group"><h3>No Action Needed</h3><div class="result-list" id="noActionResults"></div></div><div class="result-actions"><a class="btn btn-primary" href="/#apply" data-track="results_funding_cta">Review Black Summit Funding</a><button class="btn btn-secondary" id="restartFinder" type="button">Run Again</button></div><div class="disclosure" style="margin-top:22px">Partner status matters. A vendor-specific recommendation will only appear after Black Summit marks that partner Approved and Active and configures the appropriate disclosure and referral method. Candidate partners in the internal catalog are not shown to visitors as recommendations.</div></section>
+</div></main><footer><div class="shell footer-row"><div><strong style="color:#eef2f6">Black Summit Enterprise Group LLC</strong><br><span>Business consulting, funding brokerage, and referral services.</span></div><div class="footer-links"><a href="/">Funding</a><a href="/business-solutions/">Business Solutions</a><a href="/business-solutions/stack-finder/">Stack Finder</a><a href="mailto:info@blacksummitenterprisegroup.com">Contact</a></div></div></footer><script>(() => {
+  const STORAGE_PROFILE='bseg_business_profile_v1';
+  const STORAGE_ATTR='bseg_attribution_v1';
+  const STORAGE_EVENTS='bseg_analytics_v1';
+  const CATEGORIES={
+    funding:{label:'Business Funding',description:'Working capital or equipment financing may be relevant to the need you described.',next:'Review Black Summit’s existing funding options and apply only if the financing terms fit your business.',internal:true},
+    payments:{label:'Payment Processing',description:'Your payment workflow may be adding cost, friction, or unnecessary manual work.',next:'Compare your current processing setup and effective cost before changing providers. Black Summit has not activated a payment partner yet.'},
+    payroll:{label:'Payroll',description:'Your payroll process may benefit from a more structured system as your team grows.',next:'Document payroll frequency, employee/contractor mix, and current pain points. Black Summit is currently evaluating payroll solutions.'},
+    crm:{label:'CRM & Lead Follow-Up',description:'Lead capture and follow-up gaps can make opportunities easy to lose.',next:'Centralize new leads, status, next action, and follow-up timing. Black Summit is currently evaluating CRM solutions.'},
+    forms:{label:'Customer Intake & Forms',description:'Inconsistent intake can create missing information and repeat work.',next:'Standardize the minimum information collected before quotes, appointments, or service. Black Summit is currently evaluating form solutions.'},
+    accounting:{label:'Accounting & Invoicing Workflow',description:'Your invoicing or accounting process may need clearer workflow and visibility.',next:'Map how estimates, invoices, receipts, and reconciliation move today. Black Summit is currently evaluating guidance and solutions in this category.'}
+  };
+  function uid(){return 'bseg_'+Date.now().toString(36)+'_'+Math.random().toString(36).slice(2,8)}
+  function safeJson(s,fallback){try{return JSON.parse(s)||fallback}catch(e){return fallback}}
+  function getAttr(){
+    const params=new URLSearchParams(location.search); const now=new Date().toISOString();
+    const touch={ts:now,landing_page:location.pathname+location.search,referrer:document.referrer||'',utm_source:params.get('utm_source')||'',utm_medium:params.get('utm_medium')||'',utm_campaign:params.get('utm_campaign')||'',utm_content:params.get('utm_content')||'',utm_term:params.get('utm_term')||''};
+    const prior=safeJson(localStorage.getItem(STORAGE_ATTR),{}); const next={first_touch:prior.first_touch||touch,last_touch:touch}; localStorage.setItem(STORAGE_ATTR,JSON.stringify(next)); return next;
+  }
+  const attribution=getAttr();
+  function track(event,props={}){const events=safeJson(localStorage.getItem(STORAGE_EVENTS),[]); events.push({event,ts:new Date().toISOString(),path:location.pathname,...props}); localStorage.setItem(STORAGE_EVENTS,JSON.stringify(events.slice(-100)));}
+  window.BSEGAnalytics={track,getEvents:()=>safeJson(localStorage.getItem(STORAGE_EVENTS),[])};
+  track('page_view');
+  document.querySelectorAll('[data-track]').forEach(el=>el.addEventListener('click',()=>track(el.dataset.track,{href:el.getAttribute('href')||''})));
+
+  const form=document.querySelector('#stackFinderForm'); if(!form) return;
+  track('finder_started');
+  const steps=[...form.querySelectorAll('.form-step')]; let step=0;
+  const bar=document.querySelector('.progress-bar'); const error=document.querySelector('.error-box');
+  function showStep(n){step=n; steps.forEach((s,i)=>s.classList.toggle('active',i===n)); bar.style.width=((n+1)/steps.length*100)+'%'; error.classList.remove('show'); window.scrollTo({top:0,behavior:'smooth'});}
+  function validateCurrent(){const required=[...steps[step].querySelectorAll('[required]')]; for(const el of required){if(el.type==='radio'){if(!form.querySelector(`input[name="${el.name}"]:checked`)) return false;} else if(el.type==='checkbox'){if(!el.checked)return false;} else if(!String(el.value||'').trim()) return false;} return true;}
+  form.querySelectorAll('[data-next]').forEach(btn=>btn.addEventListener('click',()=>{if(!validateCurrent()){error.textContent='Please complete the required fields on this step.';error.classList.add('show');return;} track('finder_step_completed',{step:step+1}); showStep(Math.min(step+1,steps.length-1));}));
+  form.querySelectorAll('[data-back]').forEach(btn=>btn.addEventListener('click',()=>showStep(Math.max(step-1,0))));
+  function val(name){const checked=form.querySelector(`[name="${name}"]:checked`); if(checked)return checked.value; const el=form.elements[name]; return el?el.value:'';}
+  function scores(){
+    const s={funding:0,payments:0,payroll:0,crm:0,forms:0,accounting:0};
+    const employees=val('employee_count'), pay=val('customer_payments'), payroll=val('payroll_workflow'), leads=val('lead_followup'), intake=val('customer_intake'), acct=val('accounting_invoicing'), funding=val('funding_need'), problem=val('biggest_problem');
+    if(funding && funding!=='No current funding need') s.funding+=4;
+    if(funding==='Equipment or transportation financing') s.funding+=1; if(problem==='Access to capital') s.funding+=3;
+    if(/card|online|invoice/i.test(pay)) s.payments+=2; if(problem==='Payment processing costs or cash flow') s.payments+=3;
+    if(employees && !['None','Only owners'].includes(employees)) s.payroll+=1; if(/manual|spreadsheet|problem|switch/i.test(payroll)) s.payroll+=3; if(problem==='Payroll or team administration') s.payroll+=3;
+    if(/manual|inbox|memory|no system/i.test(leads)) s.crm+=3; if(problem==='Lead follow-up or sales organization') s.crm+=3;
+    if(/text|email|paper|inconsistent|no standard/i.test(intake)) s.forms+=3; if(problem==='Customer intake or quoting workflow') s.forms+=3;
+    if(/manual|spreadsheet|disconnected|problem/i.test(acct)) s.accounting+=3; if(problem==='Accounting, invoicing, or reconciliation') s.accounting+=3;
+    return s;
+  }
+  function categorize(s){const entries=Object.entries(s).sort((a,b)=>b[1]-a[1]); const max=entries[0][1]; const top=[],secondary=[],none=[]; for(const [key,score] of entries){const item={key,score,...CATEGORIES[key]}; if(score>=3 && score>=max-1)top.push(item); else if(score>=1)secondary.push(item); else none.push(item);} return {top,secondary,none};}
+  function renderList(items,target){const el=document.querySelector(target); el.innerHTML=''; items.forEach(item=>{const d=document.createElement('div'); d.className='result-item'; d.innerHTML=`<div class="result-row"><div><h4>${item.label}</h4><p>${item.description}</p><p class="next"><strong>Next step:</strong> ${item.next}</p></div><span class="pill ${item.internal?'internal':'guidance'}">${item.internal?'Black Summit service':'Category guidance'}</span></div>`; el.appendChild(d);}); if(!items.length)el.innerHTML='<div class="result-item"><p>No categories landed in this group based on your answers.</p></div>';}
+  function buildProfile(rec){const existing=safeJson(localStorage.getItem(STORAGE_PROFILE),{}); const fd=new FormData(form); const profile={business_id:existing.business_id||uid(),created_at:existing.created_at||new Date().toISOString(),updated_at:new Date().toISOString(),business_name:fd.get('business_name')||'',contact_name:fd.get('contact_name')||'',email:fd.get('email')||'',phone:fd.get('phone')||'',website:fd.get('website')||'',industry:fd.get('industry')||'',years_operating:fd.get('years_operating')||'',employee_count:fd.get('employee_count')||'',revenue_range:fd.get('revenue_range')||'',needs:{customer_payments:fd.get('customer_payments')||'',payroll_workflow:fd.get('payroll_workflow')||'',lead_followup:fd.get('lead_followup')||'',customer_intake:fd.get('customer_intake')||'',accounting_invoicing:fd.get('accounting_invoicing')||'',funding_need:fd.get('funding_need')||'',biggest_problem:fd.get('biggest_problem')||''},recommendations:rec,attribution,consent:{review_submission:fd.get('review_consent')==='yes',marketing:fd.get('marketing_consent')==='yes',partner_sharing:false,consent_version:'task2-v1',captured_at:new Date().toISOString()}}; localStorage.setItem(STORAGE_PROFILE,JSON.stringify(profile)); return profile;}
+  async function submitNetlify(profile){try{const data=new URLSearchParams(); data.set('form-name','business-stack-finder'); for(const [k,v] of new FormData(form).entries())data.set(k,String(v)); data.set('business_id',profile.business_id); data.set('recommendations_json',JSON.stringify(profile.recommendations)); data.set('attribution_json',JSON.stringify(profile.attribution)); data.set('consent_version','task2-v1'); await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:data.toString()}); track('finder_submission_recorded');}catch(e){track('finder_submission_error',{message:String(e).slice(0,120)});}}
+  form.addEventListener('submit',async e=>{e.preventDefault(); if(!validateCurrent()){error.textContent='Please confirm the required consent before viewing your results.';error.classList.add('show');return;} const s=scores(), groups=categorize(s); renderList(groups.top,'#topResults'); renderList(groups.secondary,'#secondaryResults'); renderList(groups.none,'#noActionResults'); const profile=buildProfile(groups); document.querySelector('#resultsBusinessName').textContent=profile.business_name||'your business'; form.style.display='none'; document.querySelector('.results').classList.add('show'); document.querySelector('.progress-shell').style.display='none'; track('finder_completed',{business_id:profile.business_id,top:groups.top.map(x=>x.key)}); await submitNetlify(profile); window.scrollTo({top:0,behavior:'smooth'});});
+  document.querySelector('#restartFinder')?.addEventListener('click',()=>{form.reset(); form.style.display='block'; document.querySelector('.results').classList.remove('show'); document.querySelector('.progress-shell').style.display='block'; showStep(0); track('finder_restarted');});
+})();
+</script><script type="application/json" id="bseg-partner-catalog">{
+  "version": "task2-v1",
+  "rules": {
+    "candidate": "No vendor-facing CTA or monetized recommendation.",
+    "approved": "Commercial/legal fit reviewed but CTA remains off until Active.",
+    "active": "Vendor may be surfaced when category need and partner rules match, with required disclosure."
+  },
+  "partners": [
+    {
+      "id": "payments-host-merchant-services",
+      "category": "payments",
+      "name": "Host Merchant Services",
+      "status": "candidate",
+      "monetized": false,
+      "referral_method": null,
+      "referral_url": null,
+      "terms_verified": false
+    },
+    {
+      "id": "payments-paymentcloud",
+      "category": "payments",
+      "name": "PaymentCloud",
+      "status": "candidate",
+      "monetized": false,
+      "referral_method": null,
+      "referral_url": null,
+      "terms_verified": false
+    },
+    {
+      "id": "payments-optec",
+      "category": "payments",
+      "name": "Optec Payments",
+      "status": "candidate",
+      "monetized": false,
+      "referral_method": null,
+      "referral_url": null,
+      "terms_verified": false
+    },
+    {
+      "id": "payroll-gusto",
+      "category": "payroll",
+      "name": "Gusto",
+      "status": "candidate",
+      "monetized": false,
+      "referral_method": null,
+      "referral_url": null,
+      "terms_verified": false
+    },
+    {
+      "id": "crm-highlevel",
+      "category": "crm",
+      "name": "HighLevel",
+      "status": "candidate",
+      "monetized": false,
+      "referral_method": null,
+      "referral_url": null,
+      "terms_verified": false
+    },
+    {
+      "id": "forms-jotform",
+      "category": "forms",
+      "name": "Jotform",
+      "status": "candidate",
+      "monetized": false,
+      "referral_method": null,
+      "referral_url": null,
+      "terms_verified": false
+    }
+  ]
+}</script><script type="application/json" id="bseg-business-profile-schema">{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BSEG Business Solutions Profile",
+  "type": "object",
+  "required": [
+    "business_id",
+    "created_at",
+    "updated_at",
+    "business_name",
+    "contact_name",
+    "email",
+    "needs",
+    "recommendations",
+    "attribution",
+    "consent"
+  ],
+  "properties": {
+    "business_id": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "business_name": {
+      "type": "string"
+    },
+    "contact_name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "years_operating": {
+      "type": "string"
+    },
+    "employee_count": {
+      "type": "string"
+    },
+    "revenue_range": {
+      "type": "string"
+    },
+    "needs": {
+      "type": "object",
+      "properties": {
+        "customer_payments": {
+          "type": "string"
+        },
+        "payroll_workflow": {
+          "type": "string"
+        },
+        "lead_followup": {
+          "type": "string"
+        },
+        "customer_intake": {
+          "type": "string"
+        },
+        "accounting_invoicing": {
+          "type": "string"
+        },
+        "funding_need": {
+          "type": "string"
+        },
+        "biggest_problem": {
+          "type": "string"
+        }
+      }
+    },
+    "recommendations": {
+      "type": "object"
+    },
+    "attribution": {
+      "type": "object"
+    },
+    "partner_events": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "consent": {
+      "type": "object",
+      "properties": {
+        "review_submission": {
+          "type": "boolean"
+        },
+        "marketing": {
+          "type": "boolean"
+        },
+        "partner_sharing": {
+          "type": "boolean"
+        },
+        "consent_version": {
+          "type": "string"
+        },
+        "captured_at": {
+          "type": "string"
+        }
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}</script></body></html>
