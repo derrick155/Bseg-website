@@ -107,13 +107,16 @@
   function hydrateSlot(el) {
     if (el.dataset.partnerHydrated === "1") return;
     const category = el.dataset.partnerSlot;
+    const section = el.closest("[data-partner-section]");
     const partner = active(category);
     if (!partner) {
       el.hidden = true;
+      if (section) section.hidden = true;
       return;
     }
 
     el.dataset.partnerHydrated = "1";
+    if (section) section.hidden = false;
     el.hidden = false;
 
     if (partner.requires_review && category === "payments") {
